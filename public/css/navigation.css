@@ -1,0 +1,74 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #e3e4e8;
+}
+
+.nav-color {
+    background-color: #1f5a92;
+}
+
+.text-color {
+    font-family: "Poppins", sans-serif;
+    color: #edf2f6;
+    font-weight: 700;
+}
+.text-color:hover {
+    font-family: "Poppins", sans-serif;
+    color: #edf2f6;
+    font-weight: 700;
+}
+.nav-link:focus {
+    color: #edf2f6;
+}
+.profile {
+    width: 30px;
+    height: 30px;
+    background-color: #edf2f6;
+    border-radius: 100%;
+}
+.text-nav {
+    font-family: "Poppins", sans-serif;
+    color: #edf2f6;
+    font-weight: 400;
+}
+.text-nav:focus {
+    font-family: "Poppins", sans-serif;
+    color: #edf2f6;
+    font-weight: 500;
+}
+.notification {
+    width: 20px;
+    height: 20px;
+    background-color: #48a7e7;
+    border-radius: 100%;
+}
+
+.navbar-nav li .active {
+    color: #edf2f6;
+    border-bottom: 5px solid #edf2f6;
+    width: 100%;
+    border-radius: 1px;
+    transition: 0.5s ease;
+}
+.navbar-nav li a:hover {
+    color: #edf2f6;
+}
+.ml-18 {
+    margin-left: 18px;
+}
+.sub-munu-color {
+    color: #909090;
+}
+.dropdown-item.active,
+.dropdown-item:active,
+.dropdown-item:focus,
+.dropdown-item:hover {
+    background-color: #909090;
+}
+.search-bar input::placeholder {
+    color: #ffffff;
+}
+.form-control:focus {
+    box-shadow: none;
+    border-color: #e3e4e8;
+}
