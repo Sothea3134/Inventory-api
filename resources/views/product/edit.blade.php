@@ -77,7 +77,7 @@
 <div class="container mt-3">
     <div class="container-fluid ">
         <div class="row">
-            <p style="font-size: 15px; margin-left:15px;"><span style="color:#4EA6D7;">Product</span><span style="color: #B8B8B8; margin: 0 10px;">/</span><span style="color: #B8B8B8;"> New Product</span></p>
+            <p style="font-size: 15px; margin-left:15px;"><span style="color:#4EA6D7;">Product</span><span style="color: #B8B8B8; margin: 0 10px;">/</span><span style="color: #B8B8B8;"> Edit Product</span></p>
         </div>
         <div class="row">
             <div class="col-5"></div>
@@ -98,8 +98,6 @@
             <div class="col-4"></div>
         </div>
         <div class="container mt-5">
-
-
             <div class="row">
                 <div class="col-sm-3"></div>
                 <div class="col-sm-5">
@@ -124,7 +122,7 @@
                                     <span class="text-danger font-require position-fixed">{{$errors->first('barcode')}}</span>
                                 </div>
                             </div>
-                            <div class=" mb-3 row">
+                            <div class="mb-3 row">
                                 <label for="price" class="col-sm-4 col-form-label label-color">Price:</label>
                                 <div class="col-sm-8">
                                     <input type="text" class="form-control" name="price" value="{{number_format($product->price, 2, '.', ',')}}">

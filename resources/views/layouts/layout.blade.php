@@ -26,37 +26,11 @@
 <body>
     <div class="nav-color" id="nav">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-sm-4 text-start  mt-3"><a class="navbar-brand text-color" href="#">Inventory Management</a></div>
-                <div class="col-sm-4 text-center  mt-3">
-                    <div class="d-flex justity-content-space-around search-bar" style="background-color: #466B8E;">
-                        <input type="search" class="form-control " placeholder=" Search" style=" color:#FFFFFF; border: none; background-color: #466B8E; font-size:13px; height:39px;">
-                        <i class="fas fa-search" style="  margin-top: 14px; color:#FFFFFF; font-size:13px; margin-right:10px"></i>
-                    </div>
-                    <div id="datatable">
-                    </div>
-                </div>
+            <div class="row justify-content-between align-items-center">
+                <div class="col-sm-4 text-start"><a class="navbar-brand text-color" href="#">Inventory Management</a></div>
+                <!-- Navbar -->
+                <nav class="col-sm-8 navbar navbar-expand-lg justify-content-end" style="box-shadow: none;">
 
-                <div class="col-sm-4 mt-2">
-                    <div class=" d-flex justify-content-end">
-                        <div class="p-2 text-color mt-1">
-                            <div class="notification d-flex justify-content-center align-items-center"> <i class="fas fa-plus" style="font-size: 10px;"></i></div>
-                        </div>
-                        <div class="p-2 text-color mt-1">
-                            <div class="notification d-flex justify-content-center align-items-center"> <i class="far fa-bell" style="font-size: 14px;"></i></div>
-                        </div>
-                        <div class="p-2 text-color">
-                            <div class='profile'></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <!-- Navbar -->
-            <nav class="navbar navbar-expand-lg" style="box-shadow: none;">
-                <!-- Container wrapper -->
-                <div class="container-fluid">
                     <!-- Toggle button -->
                     <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <i class="fas fa-bars"></i>
@@ -76,9 +50,6 @@
                                 <a class="nav-link text-nav {{$active['import']}}" href="{{url('import')}}">Import Stock</a>
                             </li>
                             <li class="nav-item ml-18">
-                                <a class="nav-link text-nav {{$active['customer']}}" href="{{url('customer')}}">Customer</a>
-                            </li>
-                            <li class="nav-item ml-18">
                                 <a class="nav-link text-nav {{$active['sales']}}" href="{{url('sales')}}">Sales</a>
                             </li>
                             <li class="nav-item dropdown ml-18">
@@ -93,34 +64,14 @@
 
                                 </ul>
                             </li>
-                            <li class="nav-item ml-18">
-                                <a class="nav-link text-nav  {{$active['user-management']}}" href="{{url('user-management')}}">User Management</a>
-                            </li>
-                            <!-- Dropdown -->
-                            <li class="nav-item dropdown text-color ml-18">
-                                <a class="nav-link dropdown-toggle text-nav " href="#" id="navbarDropdownMenuLink" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
-                                    More
-                                </a>
-                                <ul class="dropdown-menu text-color" aria-labelledby="navbarDropdownMenuLink">
-                                    <li>
-                                        <a class="dropdown-item sub-munu-color" href="#">Action</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item sub-munu-color" href="#">Another action</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item sub-munu-color" href="#">Something else here</a>
-                                    </li>
-                                </ul>
-                            </li>
                         </ul>
                         <!-- Left links -->
                     </div>
-                </div>
-                <!-- Container wrapper -->
-            </nav>
-            <!-- Navbar -->
+                </nav>
+                <!-- Navbar -->
+            </div>
         </div>
+
     </div>
     @yield('content')
 

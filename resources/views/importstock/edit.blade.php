@@ -110,8 +110,7 @@
 <div class="container-fluid mt-3">
     <div class="container">
         <div class="row">
-            <p style="font-size: 15px; margin-left:35px;"><span style="color:#4EA6D7;">Import Stock</span><span style="color: #B8B8B8; margin: 0 10px;">/</span><span style="color: #B8B8B8;"> New Import</span></p>
-
+            <p style="font-size: 15px; margin-left:35px;"><span style="color:#4EA6D7;">Import Stock</span><span style="color: #B8B8B8; margin: 0 10px;">/</span><span style="color: #B8B8B8;"> Edit Import</span></p>
         </div>
         <div class="row">
             <div class="col-4"></div>
@@ -269,10 +268,10 @@
                                                 <input type="text" value="' + response.searchBarcode.barcode + '" name="barcode[]" disabled id="barcode"  style="width: 112px; height:30px; background-color:#FFFFFF;"class="form-control">\
                                             </td>\
                                             <td class="import-text-color-body">\
-                                                <input type="text" required value="{{old("import_details[' + index + '][qty]")}}" name="import_details[' + index + '][qty]" style="width: 77px; height:30px; border:1px solid #E0E0E0; border-radius: 0px; background-color:FFFFFF;text-align:center;" class="form-control">\
+                                                <input type="number" required value="{{old("import_details[' + index + '][qty]")}}" name="import_details[' + index + '][qty]" style="width: 77px; height:30px; border:1px solid #E0E0E0; border-radius: 0px; background-color:FFFFFF;text-align:center;" class="form-control">\
                                             </td>\
                                             <td class="import-text-color-body">\
-                                                <input type="text" required value="{{old("import_details[' + index + '][unit_price]")}}" name="import_details[' + index + '][unit_price]" style="width: 77px; height:30px; border:1px solid #E0E0E0; border-radius: 0px; background-color:#FFFFFF; text-align:center;" class="form-control">\
+                                                <input type="number" required value="{{old("import_details[' + index + '][unit_price]")}}" name="import_details[' + index + '][unit_price]" style="width: 77px; height:30px; border:1px solid #E0E0E0; border-radius: 0px; background-color:#FFFFFF; text-align:center;" class="form-control">\
                                             </td>\
                                             <td class="import-text-color-body">\
                                                 <button type="button" class="btn btn-primary remove_row" id="' + index + '" style="background-color: #E85757; text-transform: none;  border-radius: 0; width: 90px;height:30px; padding:0px;"><span>Remove</span></button>\
@@ -311,10 +310,10 @@
                                                 <input type="text" value="' + response.searchBarcode.barcode + '" name="barcode[]" disabled id="barcode"  style="width: 112px; height:30px; background-color:#FFFFFF;"class="form-control">\
                                             </td>\
                                             <td class="import-text-color-body">\
-                                                <input type="text"required value="{{old("qty")}}" name="import_details[' + index + '][qty]" style="width: 77px; height:30px; border:1px solid #E0E0E0; border-radius: 0px; background-color:FFFFFF;text-align:center;" class="form-control">\
+                                                <input type="number"required value="{{old("qty")}}" name="import_details[' + index + '][qty]" style="width: 77px; height:30px; border:1px solid #E0E0E0; border-radius: 0px; background-color:FFFFFF;text-align:center;" class="form-control">\
                                             </td>\
                                             <td class="import-text-color-body">\
-                                                <input type="text"required value="{{old("unit_price")}}" name="import_details[' + index + '][unit_price]" style="width: 77px; height:30px; border:1px solid #E0E0E0; border-radius: 0px; background-color:#FFFFFF; text-align:center;" class="form-control">\
+                                                <input type="number"required value="{{old("unit_price")}}" name="import_details[' + index + '][unit_price]" style="width: 77px; height:30px; border:1px solid #E0E0E0; border-radius: 0px; background-color:#FFFFFF; text-align:center;" class="form-control">\
                                             </td>\
                                             <td class="import-text-color-body">\
                                                 <button type="button" class="btn btn-primary remove_row" id="' + index + '" style="background-color: #E85757; text-transform: none;  border-radius: 0; width: 90px;height:30px; padding:0px;"><span>Remove</span></button>\
@@ -389,10 +388,10 @@
                                                 <input type="text" value="' + item.barcode + '" name="barcode[]" disabled id="barcode"  style="width: 112px; height:30px; background-color:#FFFFFF;"class="form-control">\
                                             </td>\
                                             <td class="import-text-color-body">\
-                                                <input type="text" required value="' + item.qty + '" name="import_details[' + index + '][qty]"  style="width: 77px; height:30px; border:1px solid #E0E0E0; border-radius: 0px; background-color:FFFFFF;text-align:center;" class="form-control">\
+                                                <input type="number" required value="' + item.qty + '" name="import_details[' + index + '][qty]"  style="width: 77px; height:30px; border:1px solid #E0E0E0; border-radius: 0px; background-color:FFFFFF;text-align:center;" class="form-control">\
                                             </td>\
                                             <td class="import-text-color-body">\
-                                                <input type="text" required value="' + item.unit_price + '"  name="import_details[' + index + '][unit_price]"  style="width: 77px; height:30px; border:1px solid #E0E0E0; border-radius: 0px; background-color:#FFFFFF; text-align:center;" class="form-control">\
+                                                <input type="number" required value="' + item.unit_price + '"  name="import_details[' + index + '][unit_price]"  style="width: 77px; height:30px; border:1px solid #E0E0E0; border-radius: 0px; background-color:#FFFFFF; text-align:center;" class="form-control">\
                                             </td>\
                                             <td class="import-text-color-body">\
                                                 <button type="button" class="btn btn-primary remove_row" id="' + index + '" style="background-color: #E85757; text-transform: none;  border-radius: 0; width: 90px;height:30px; padding:0px;"><span>Remove</span></button>\

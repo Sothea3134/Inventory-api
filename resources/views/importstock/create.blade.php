@@ -276,10 +276,10 @@
                                                 <input type="text" value="' + response.searchBarcode.barcode + '" name="barcode[]" disabled id="barcode"  style="width: 112px; height:30px; background-color:#FFFFFF;"class="form-control">\
                                             </td>\
                                             <td class="import-text-color-body">\
-                                                <input type="text" required value="{{old("import_details[' + index + '][qty]")}}" name="import_details[' + index + '][qty]" style="width: 77px; height:30px; border:1px solid #E0E0E0; border-radius: 0px; background-color:FFFFFF;text-align:center;" class="form-control">\
+                                                <input type="number" required value="{{old("import_details[' + index + '][qty]")}}" name="import_details[' + index + '][qty]" style="width: 77px; height:30px; border:1px solid #E0E0E0; border-radius: 0px; background-color:FFFFFF;text-align:center;" class="form-control">\
                                             </td>\
                                             <td class="import-text-color-body">\
-                                                <input type="text" required value="{{old("import_details[' + index + '][unit_price]")}}" name="import_details[' + index + '][unit_price]" style="width: 77px; height:30px; border:1px solid #E0E0E0; border-radius: 0px; background-color:#FFFFFF; text-align:center;" class="form-control">\
+                                                <input type="number" required value="{{old("import_details[' + index + '][unit_price]")}}" name="import_details[' + index + '][unit_price]" style="width: 77px; height:30px; border:1px solid #E0E0E0; border-radius: 0px; background-color:#FFFFFF; text-align:center;" class="form-control">\
                                             </td>\
                                             <td class="import-text-color-body">\
                                                 <button type="button" class="btn btn-primary remove_row" id="' + index + '" style="background-color: #E85757; text-transform: none;  border-radius: 0; width: 90px;height:30px; padding:0px;"><span>Remove</span></button>\
@@ -318,10 +318,10 @@
                                                 <input type="text" value="' + response.searchBarcode.barcode + '" name="barcode[]" disabled id="barcode"  style="width: 112px; height:30px; background-color:#FFFFFF;"class="form-control">\
                                             </td>\
                                             <td class="import-text-color-body">\
-                                                <input type="text"required value="{{old("qty")}}" name="import_details[' + index + '][qty]" style="width: 77px; height:30px; border:1px solid #E0E0E0; border-radius: 0px; background-color:FFFFFF;text-align:center;" class="form-control">\
+                                                <input type="number"required value="{{old("qty")}}" name="import_details[' + index + '][qty]" style="width: 77px; height:30px; border:1px solid #E0E0E0; border-radius: 0px; background-color:FFFFFF;text-align:center;" class="form-control">\
                                             </td>\
                                             <td class="import-text-color-body">\
-                                                <input type="text"required value="{{old("unit_price")}}" name="import_details[' + index + '][unit_price]" style="width: 77px; height:30px; border:1px solid #E0E0E0; border-radius: 0px; background-color:#FFFFFF; text-align:center;" class="form-control">\
+                                                <input type="number"required value="{{old("unit_price")}}" name="import_details[' + index + '][unit_price]" style="width: 77px; height:30px; border:1px solid #E0E0E0; border-radius: 0px; background-color:#FFFFFF; text-align:center;" class="form-control">\
                                             </td>\
                                             <td class="import-text-color-body">\
                                                 <button type="button" class="btn btn-primary remove_row" id="' + index + '" style="background-color: #E85757; text-transform: none;  border-radius: 0; width: 90px;height:30px; padding:0px;"><span>Remove</span></button>\
